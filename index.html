@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Домашняя кондитерская «Десерт от души»</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Домашняя кондитерская<br><span>«Десерт от души»</span></h1>
+  <p>Торты и пироги на дому — с любовью и свежими продуктами</p>
+  <button onclick="scrollToMenu()">Смотреть торты 🍰</button>
+</header>
+
+<section class="about">
+  <img src="tetya.jpg" alt="Кондитер">
+  <div>
+    <h2>Обо мне</h2>
+    <p>Здравствуйте! Меня зовут Гаухар. Я начинающий кондитер и пеку торты и пироги на дому.
+    Всё готовлю сама, из свежих продуктов, с любовью к делу. Заказы принимаю по WhatsApp —
+    пишите, и мы всё обсудим!</p>
+  </div>
+</section>
+
+<h2 class="title" id="menu">Мои торты и пироги</h2>
+<div class="tabs">
+  <button class="active" onclick="showTab('cakes',this)">Торты</button>
+  <button onclick="showTab('pies',this)">Пироги</button>
+</div>
+
+<div id="cakes" class="grid active">
+  <div class="card"><img src="cake1.jpg" alt="Красный бархат"><h3>Красный бархат</h3></div>
+  <div class="card"><img src="cake2.jpg" alt="Сникерс"><h3>Сникерс</h3></div>
+</div>
+
+<div id="pies" class="grid">
+  <div class="card"><img src="cake3.jpg" alt="Сникерс"><h3>Сникерс</h3></div>
+  <div class="card"><img src="cake3.jpg" alt="Красный бархат"><h3>Красный бархат</h3></div>
+  <div class="card"><img src="cake3.jpg" alt="Медовик"><h3>Медовик</h3></div>
+</div>
+
+<footer>
+  <h2>Чтобы узнать цену — обращайтесь сюда 👇</h2>
+  <p class="phone">+7 917 435-07-08</p>
+  <p class="copy">© Домашняя кондитерская «Десерт от души»</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
